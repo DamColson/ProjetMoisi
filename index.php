@@ -1,3 +1,8 @@
+<?php
+$file = 'source.xml';
+$xml = simplexml_load_file($file);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -8,9 +13,17 @@
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Germania+One" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/form.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-        <title>warFriendsForm</title>
+        <title></title>
     </head>
     <body>
+        <?php
+        for($i=0;$i<4;$i++):
+            ?><a href="index.php?<?=$i+1?>.html"><?= $xml->page[$i]->menu;?></a>
+        <?php        
+        endfor;
+        
+        
+        ?>
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
