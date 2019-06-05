@@ -11,23 +11,54 @@ $xml = simplexml_load_file($file);
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Germania+One" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/form.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
         <title><?= $xml->page->title; ?></title>
     </head>
-    <body>
-        <?php for($i=0;$i<4;$i++):
-            echo $xml->page[$i]->menu; 
-        endfor;
-        ?>
+    <body class="germaniaStyleFont">        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <?php
+                    for ($i = 0; $i < 4; $i++):
+                        ?>
+                        <li class="nav-item">    
+                            <a class="nav-link" href="index.php?<?= 'page=' . ($i + 1) . '.html'; ?>"><?= $xml->page[$i]->menu; ?></a>
+                            <?php
+                        endfor;
+                        ?>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div>
-            <?= $xml->page->content; ?>
+            <?php
+            if (isset($_GET['page']) && $_GET['page'] == '1.html'): ?>
+            <h1 class="text-center"><?php echo $xml->page[0]->title; ?> </h1>
+                <?php
+                echo $xml->page[0]->content;            
+            elseif (isset($_GET['page']) && $_GET['page'] == '2.html'):
+                echo $xml->page[1]->content;
+            elseif (isset($_GET['page']) && $_GET['page'] == '3.html'):
+                echo $xml->page[2]->content;
+            elseif (isset($_GET['page']) && $_GET['page'] == '4.html'):
+                echo $xml->page[3]->content;
+            endif;
+            ?>
         </div>
         <div>
-            
+
         </div>
-        
-        
+
+<?= var_dump($xml); ?>
+
+
         <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
