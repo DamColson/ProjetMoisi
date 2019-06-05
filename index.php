@@ -1,6 +1,9 @@
 <?php
 $file = 'source.xml';
 $xml = simplexml_load_file($file);
+if(isset($_GET)):
+    $_GET = array_map('strip_tags',$_GET);
+endif;
 ?>
 
 <!DOCTYPE html>
@@ -16,11 +19,22 @@ $xml = simplexml_load_file($file);
         <title></title>
     </head>
     <body>
+        
         <?php
         for($i=0;$i<4;$i++):
-            ?><a href="index.php?<?=$i+1?>.html"><?= $xml->page[$i]->menu;?></a>
+            ?><a href="index.php?<?='page='.($i+1).'.html';?>"><?= $xml->page[$i]->menu;?></a>
         <?php        
         endfor;
+        var_dump($_GET);
+        if(isset($_GET['page']) && $_GET['page'] == '1.html'):
+            echo $xml->page[0]->content;
+        elseif(isset($_GET['page']) && $_GET['page'] == '2.html'):
+            echo $xml->page[1]->content;
+        elseif(isset($_GET['page']) && $_GET['page'] == '3.html'):
+            echo $xml->page[2]->content;
+        elseif(isset($_GET['page']) && $_GET['page'] == '4.html'):
+            echo $xml->page[3]->content;
+        endif;
         
         
         ?>
