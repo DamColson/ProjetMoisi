@@ -3,10 +3,18 @@
     font-family: 'Germania One', cursive;
 }
 
+#slide1 {
+   background: url(macon.jpg) center no-repeat fixed;
+}
+
 .germaniaStyleFont {
     font-family: 'Germania One', cursive; 
 }
 
 .titlePage2 {
     color: #842E1C;
+}
+
+body {
+    background-color: #C8AD7f;
 }

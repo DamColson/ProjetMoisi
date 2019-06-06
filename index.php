@@ -28,7 +28,7 @@ $xml = simplexml_load_file($file);
                     for ($i = 0; $i < 4; $i++):
                         ?>
                         <li class="nav-item">    
-                            <a class="nav-link" href="index.php?<?= 'page=' . ($i + 1) . '.html'; ?>"><?= $xml->page[$i]->menu; ?></a>
+                            <a class="nav-link" href="<?= ($i + 1); ?>.html"><?= $xml->page[$i]->menu; ?></a>
                             <?php
                         endfor;
                         ?>
