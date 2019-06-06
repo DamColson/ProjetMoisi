@@ -18,13 +18,27 @@ endif;
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
         <title></title>
     </head>
-    <body class="bg-beige">
-        
+    <body class="bg-beige germaniaStyleFont">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <?php
+                    for ($i = 0; $i < 4; $i++):
+                        ?>
+                        <li class="nav-item">    
+                            <a class="nav-link" href="<?=$i+1?>.html"><?= $xml->page[$i]->menu; ?></a>
+                            <?php
+                        endfor;
+                        ?>
+                    </li>
+                </ul>
+            </div>
+</nav>
         <?php
-        for($i=0;$i<4;$i++):
-            ?><a href="<?=$i+1?>.html"><?= $xml->page[$i]->menu;?></a>
-        <?php        
-        endfor;
         if(isset($_GET['page']) && $_GET['page'] == '1.html'):
             ?>
             <p><?=$xml->page[0]->title;?></p>
@@ -42,7 +56,7 @@ endif;
             echo $xml->page[2]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '4.html'):
 ?>
-            <p class="text-center bg-brick text-light"><?=$xml->page[3]->title;?></p>
+            <p class="text-center bg-brick text-beige"><?=$xml->page[3]->title;?></p>
             <?php
             echo $xml->page[3]->content;
         elseif(count($_GET) == 0):
