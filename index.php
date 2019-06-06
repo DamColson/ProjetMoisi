@@ -14,26 +14,42 @@ endif;
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Germania+One" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/form.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
         <title></title>
     </head>
-    <body>
+    <body class="bg-beige">
         
         <?php
         for($i=0;$i<4;$i++):
             ?><a href="<?=$i+1?>.html"><?= $xml->page[$i]->menu;?></a>
         <?php        
         endfor;
-        var_dump($_GET);
         if(isset($_GET['page']) && $_GET['page'] == '1.html'):
+            ?>
+            <p><?=$xml->page[0]->title;?></p>
+            <?php
             echo $xml->page[0]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '2.html'):
+            ?>
+            <p><?=$xml->page[1]->title;?></p>
+            <?php
             echo $xml->page[1]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '3.html'):
+?>
+            <p><?=$xml->page[2]->title;?></p>
+            <?php
             echo $xml->page[2]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '4.html'):
+?>
+            <p class="text-center bg-brick text-light"><?=$xml->page[3]->title;?></p>
+            <?php
             echo $xml->page[3]->content;
+        elseif(count($_GET) == 0):
+?>
+            <p><?=$xml->page[0]->title;?></p>
+            <?php
+            echo $xml->page[0]->content;
         endif;
         
         
