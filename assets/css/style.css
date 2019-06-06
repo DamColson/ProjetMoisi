@@ -7,6 +7,29 @@
     font-family: 'Germania One', cursive; 
 }
 
+/* CSS Page1 */
 .img {
-    
+    text-decoration: underline; 
+}
+
+.h2Page1 {
+    text-decoration: underline;
+}
+
+
+/* Damien */
+.bg-brick{
+    background-color: #842E1C;
+}
+
+.bg-beige{
+    background-color: #C8AD7F;
+}
+
+.text-brick{
+    color: #842E1C;
+}
+
+.text-beige{
+    color:#c1967e; 
 }
