@@ -22,7 +22,7 @@ endif;
         
         <?php
         for($i=0;$i<4;$i++):
-            ?><a href="index.php?<?='page='.($i+1).'.html';?>"><?= $xml->page[$i]->menu;?></a>
+            ?><a href="<?=$i+1?>.html"><?= $xml->page[$i]->menu;?></a>
         <?php        
         endfor;
         var_dump($_GET);
