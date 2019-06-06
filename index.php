@@ -41,27 +41,27 @@ endif;
         <?php
         if(isset($_GET['page']) && $_GET['page'] == '1.html'):
             ?>
-            <p><?=$xml->page[0]->title;?></p>
+            <p class="text-center bg-beige text-brick h1"><?=$xml->page[0]->title;?></p>
             <?php
             echo $xml->page[0]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '2.html'):
             ?>
-            <p><?=$xml->page[1]->title;?></p>
+            <p class="text-center bg-beige text-brick h1"><?=$xml->page[1]->title;?></p>
             <?php
             echo $xml->page[1]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '3.html'):
 ?>
-            <p><?=$xml->page[2]->title;?></p>
+            <p class="text-center bg-beige text-brick h1"><?=$xml->page[2]->title;?></p>
             <?php
             echo $xml->page[2]->content;
         elseif(isset($_GET['page']) && $_GET['page'] == '4.html'):
 ?>
-            <p class="text-center bg-brick text-beige"><?=$xml->page[3]->title;?></p>
+            <p class="text-center bg-beige text-brick h1"><?=$xml->page[3]->title;?></p>
             <?php
             echo $xml->page[3]->content;
         elseif(count($_GET) == 0):
 ?>
-            <p><?=$xml->page[0]->title;?></p>
+            <p class="text-center bg-beige text-brick h1"><?=$xml->page[0]->title;?></p>
             <?php
             echo $xml->page[0]->content;
         endif;

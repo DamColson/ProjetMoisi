@@ -22,3 +22,7 @@
 .germaniaStyleFont {
     font-family: 'Germania One', cursive; 
 }
+
+.border-brick{
+    border:solid 2px #842E1C;
+}
