@@ -23,9 +23,9 @@
     <page id="2">
         <menu>Qui sommes nous?</menu>
         <title>En apprendre plus sur nous - Maçonnerie Ocordo</title>
-        <content><![CDATA[<h1 class="text-brick text-center">Qui sommes-nous?</h1>
-<h2 class="text-center text-brick" >L’AGENCE DE TRAVAUX OCORDO</h2>
-<h3 class="text-center text-brick">Présentation de notre entreprise</h3>
+        <content><![CDATA[<h1 class="text-beige bg-brick text-center mt-3">Qui sommes-nous?</h1>
+<h2 class="text-center text-brick mt-5 text-beige bg-brick">L’AGENCE DE TRAVAUX OCORDO</h2>
+<h3 class="text-center text-beige bg-brick mt-5">Présentation de notre entreprise</h3>
 <p class="text-brick w-50 mt-5 mx-auto">Nous sommes un groupement permanent d’entreprises locales du bâtiment spécialisées dans les travaux de rénovation d’appartements et de maisons et de construction d’extensions horizontale ou verticale de maisons.</p><p class="text-brick w-50 mx-auto mt-2">
     Nous travaillons exclusivement pour les particuliers.</p>
 <p class="mx-auto w-50 text-brick"><iframe src="https://www.youtube.com/embed/Crh5lFpNK0o?feature=oembed" allowfullscreen="" width="500" height="281" frameborder="0"></iframe></p>
@@ -65,24 +65,24 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
     <page id="3">
         <menu>Nos clients témoignent</menu>
         <title>Avis clients - Maçonnerie Ocordo</title>
-        <content><![CDATA[<h1>Nos clients témoignent</h1>
-<div class="testimonials-list">
-    <div class="quote">
-        <h2>Rénovation transformation</h2>
-        <p>Transformation rénovation d’un garage et refaire les murs ( placo), l’electricité (prises, eclairage leds ),le sol ( carrelage), les peintures et changement d’une porte-fenêtre. Devis: précis et rapide Prestations au rythme convenu, réalisation des travaux sans failles, très bonnes prestation Chantier: propreté absolue et nettoyage complet à la fin. Bémol : 2 jours de retard à cause du retard de livraison de la fenêtre, mais vraiment pas grave. Prix: très raisonnable Je recommande Ocordo pour l’efficacité du travail réalisé en amont: devis, tarifs. Ils connaissent le travail.</p>
-        <p>BrunoPH</p>
+        <content><![CDATA[<h1 class="text-beige bg-brick text-center mt-3">Nos clients témoignent</h1>
+<div class="testimonials-list w-75 mx-auto mt-4">
+    <div class="quote border-brick">
+        <h2 class="text-brick text-center mt-3">Rénovation transformation</h2>
+        <p class="text-brick w-75 mt-3 mx-auto">Transformation rénovation d’un garage et refaire les murs ( placo), l’electricité (prises, eclairage leds ),le sol ( carrelage), les peintures et changement d’une porte-fenêtre. Devis: précis et rapide Prestations au rythme convenu, réalisation des travaux sans failles, très bonnes prestation Chantier: propreté absolue et nettoyage complet à la fin. Bémol : 2 jours de retard à cause du retard de livraison de la fenêtre, mais vraiment pas grave. Prix: très raisonnable Je recommande Ocordo pour l’efficacité du travail réalisé en amont: devis, tarifs. Ils connaissent le travail.</p>
+        <p class="text-brick w-75 text-right mt-3 mx-auto">BrunoPH</p>
     </div>
-    <div class="quote">
-        <h2>Sérieux</h2>
-        <p>Nous sommes satisfait du travail de cette entreprise qui a rénové notre maison quand nous sommes arrivés à lille. il y avait tout a rénové et leur commercial a su nous consacrer du temps pour nous proposer un projet qui convenait à notre gout et à notre budget. les travaux ont été bien fait à part un petit détail au niveau de la fourniture de la robineterie de la cuisine mais sans gravité</p>
-        <p>PJ9e7S9L</p>
+    <div class="quote mt-3 border-brick mb-3">
+        <h2 class="text-brick text-center mt-3">Sérieux</h2>
+        <p class="text-brick w-75 mt-3 mx-auto">Nous sommes satisfait du travail de cette entreprise qui a rénové notre maison quand nous sommes arrivés à lille. il y avait tout a rénové et leur commercial a su nous consacrer du temps pour nous proposer un projet qui convenait à notre gout et à notre budget. les travaux ont été bien fait à part un petit détail au niveau de la fourniture de la robineterie de la cuisine mais sans gravité</p>
+        <p class="text-brick w-75 text-right mt-3 mx-auto">PJ9e7S9L</p>
     </div>
 </div>]]></content>
     </page>
     <page id="4">
         <menu>Contact</menu>
         <title>Contactez nous - Maçonnerie Ocordo</title>
-        <content><![CDATA[<h1 class="bg-brick text-beige text-center">Contact et Devis</h1>    
+        <content><![CDATA[<h1 class="bg-brick text-beige text-center mt-3">Contact et Devis</h1>    
 <p><iframe style="border: 0; float: right;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10840.441212216989!2d-1.562078!3d47.214424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10a23dc1d980bca7!2sOcordo+Travaux+Nantes!5e0!3m2!1sfr!2sfr!4v1434122059096" width="600" height="450" frameborder="0"></iframe></p>
 <p class="text-center bg-brick text-beige">POUR OBTENIR UN DEVIS GRATUIT 3 POSSIBILITÉS :</p>
 <ul class="text-center bg-brick text-beige">
