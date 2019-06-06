@@ -3,7 +3,7 @@
 }
 
 .bg-beige{
-    background-color: #C8AD7F;
+    background-color: #fff8dc;
 }
 
 .text-brick{
@@ -25,4 +25,16 @@
 
 .border-brick{
     border:solid 2px #842E1C;
+}
+
+.img {
+    text-decoration: underline; 
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+footer a {
+  color:#c1967e;  
 }
