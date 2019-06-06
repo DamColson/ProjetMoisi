@@ -34,7 +34,7 @@ endif;
                     for ($i = 0; $i < 4; $i++):
                         ?>
                         <li class="nav-item">    
-                            <a class="nav-link" href="<?=$i+1?>.html"><?= $xml->page[$i]->menu; ?></a>
+                            <a class="nav-link text-beige" href="<?=$i+1?>.html"><?= $xml->page[$i]->menu; ?></a>
                             <?php
                         endfor;
                         ?>
